@@ -3,7 +3,6 @@ package com.example.controllers;
 import com.example.constants.Messages;
 import com.example.dtos.ResponseMessage;
 import com.example.entities.User;
-import com.example.repositories.UserRepository;
 import com.example.security.JwtTokenUtil;
 import com.example.security.Validation;
 import com.example.services.UserService;
@@ -19,8 +18,6 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-    @Autowired
-    private UserRepository userRepository;
     private Validation validation;
     private JwtTokenUtil jwtTokenUtil;
     private ResponseMessage responseMessage;
